@@ -1,0 +1,167 @@
+/* Importação de uma fonte limpa do Google Fonts (opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8; /* Fundo levemente cinza */
+    color: #333;
+}
+
+/* --- Cabeçalho/Navegação --- */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ff006e; /* Cor de destaque */
+}
+
+.menu-navegacao a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu-navegacao a:hover {
+    color: #ff006e;
+}
+
+.icones-usuario button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* --- Banner Principal --- */
+.banner-principal {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    margin-bottom: 30px;
+}
+
+.banner-principal h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.banner-principal p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-comprar {
+    background-color: #ff006e; /* Botão de destaque */
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #cc0058;
+}
+
+/* --- Produtos --- */
+.container-produtos {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Layout responsivo de produtos */
+    gap: 25px;
+}
+
+.container-produtos h2 {
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.cartao-produto {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.cartao-produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.cartao-produto h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.preco-antigo {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.preco-novo {
+    color: #e94e77; /* Cor de preço em destaque */
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.btn-adicionar {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --- Rodapé --- */
+.rodape {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.links-rodape a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
